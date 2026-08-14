@@ -2,6 +2,7 @@
 
 ## Retrieval
 
+- Code samples in `04-code-samples/` are byte-identical copies from the pinned commit; read the matching file there when a source link is unreachable.
 - Search context files before raw notes; context files supply aliases and code paths.
 - Use `03-agent-context/REGEX-SEARCH.md` for composable `rg` patterns.
 - Combine tags with bounded `rg -l -0 ... | xargs -0 -r -n 40 rg -l ...` stages.
