@@ -70,8 +70,9 @@ Implementation agent:
 2. Search `03-agent-context/` before searching raw notes.
 3. Check `status` and `implementation_evidence`.
 4. Read the raw note and pinned source paths.
-5. Inspect the target repository before naming target files.
-6. Port the contract, ownership, failure behavior, and tests—not the original package layout.
+5. Use `04-code-samples/DEEP-DIVE-MAP.md` to find local code for the major runtime capability families.
+6. Inspect the target repository before naming target files.
+7. Port the contract, ownership, failure behavior, and tests—not the original package layout.
 
 ## Search examples
 

@@ -4,6 +4,8 @@ Byte-identical source files copied from deepseek-ai/deepseek-harness at commit 4
 
 Use this folder when the official monorepo is not reachable. Every file maps one-to-one to a source link in 03-agent-context: the original package path is preserved under packages/.
 
+For a direct notes-to-code reading path, start with [DEEP-DIVE-MAP.md](DEEP-DIVE-MAP.md).
+
 ## Layout
 
 04-code-samples/packages/... matches the source path named by the notes. For example, packages/core/tools/src/index.ts in the notes resolves to 04-code-samples/packages/core/tools/src/index.ts here.
@@ -24,6 +26,7 @@ Use this folder when the official monorepo is not reachable. Every file maps one
 - Skill surface
 - Client connection fixture plus trajectory and conversation UI samples
 - ACP snapshot test support
+- Deep implementation coverage for subagents, process execution, skill discovery, and real-time prompt/context assembly
 
 ## Provenance
 
