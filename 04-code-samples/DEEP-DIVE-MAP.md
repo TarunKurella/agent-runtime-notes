@@ -22,6 +22,8 @@ Notes: [subprocess seam](../03-agent-context/0066-the-subprocess-service-is-its-
 3. Read `packages/terminal/terminal-bash/src/session.ts` and `packages/terminal/tool-terminal/src/index.ts` for persistent session ownership and model-facing terminal calls.
 4. Use `process-exit.spec.ts`, `spawn.spec.ts`, `terminal.spec.ts`, and sandbox end-to-end tests to study teardown and confinement failures.
 
+For the complete tool-output and long-Bash lifecycle, read [TOOL-RESULT-LIFECYCLE.md](TOOL-RESULT-LIFECYCLE.md).
+
 ## Skill Discovery And Management
 
 Notes: [host-held scoped registry](../03-agent-context/0116-the-skill-registry-is-host-held-and-layered-per-scope.md), [progressive disclosure](../03-agent-context/0143-skill-system-progressive-disclosure-instructions-for-agents.md), [catalog hot refresh](../03-agent-context/0192-skill-catalog-hot-refresh.md), [invocation policy](../03-agent-context/0204-independent-model-and-user-skill-invocation-policy.md), and [registry cleanup](../03-agent-context/0539-prune-unused-skill-registry-api.md).

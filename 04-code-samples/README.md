@@ -8,6 +8,8 @@ For a direct notes-to-code reading path, start with [DEEP-DIVE-MAP.md](DEEP-DIVE
 
 For the detailed event-log, persistence, recovery, and compaction model, read [EVENT-SOURCING-DURABILITY.md](EVENT-SOURCING-DURABILITY.md).
 
+For tool-result retention, Bash spill behavior, model context pruning, and long-running job control, read [TOOL-RESULT-LIFECYCLE.md](TOOL-RESULT-LIFECYCLE.md).
+
 ## Layout
 
 04-code-samples/packages/... matches the source path named by the notes. For example, packages/core/tools/src/index.ts in the notes resolves to 04-code-samples/packages/core/tools/src/index.ts here.

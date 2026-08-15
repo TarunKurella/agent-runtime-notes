@@ -247,3 +247,5 @@ For a Rust or another-language harness, preserve these contracts rather than cop
 - [0677: JSONL durable artifact](../03-agent-context/0677-use-session-jsonl-as-the-only-snapshot-session-log-artifact.md)
 
 The linked notes remain the authority on design status and rationale. This guide is intentionally specific to the pinned source commit.
+
+For the detailed distinction between a durable `tool/result`, an ephemeral Bash spill file, and a later surface replacement, read [TOOL-RESULT-LIFECYCLE.md](TOOL-RESULT-LIFECYCLE.md).
