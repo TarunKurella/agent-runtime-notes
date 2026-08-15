@@ -11,12 +11,17 @@ Use this folder when the official monorepo is not reachable. Every file maps one
 ## What is included
 
 - Core tool registry, typed schema DSL, invariants, code mode, and Python typing surfaces
-- Event-sourced session log, surface projection, and invariant checks
-- Agent lifecycle and agent-loop orchestration
+- Event-sourced session log, surface projection, agent-loop orchestration, and resume behavior
+- Compaction seam, checkpoint vocabulary, summarization backend, and tool-result pruning
+- Persisted goal lifecycle, model-facing goal tools, and the goal-round continuation driver
+- Session checkpoint policy, crash recovery coverage, durable persistence, and write-behind coordination
+- Workflow engine, worker-thread runtime, general workflow tool, and the fresh-agent Ralph loop
+- Continuable subagent lifecycle, durable descriptors, follow-ups, and settlement behavior
+- Workspace `AGENTS.md`-style instruction loading, rendering, and context-state updates
 - LLM service types plus the pi-ai provider adapter and catalog
 - Host API proxy and ACP bridge surface
 - Local filesystem IO, tool-fs session cwd, e2b filesystem, and bash tool
-- Skill surface and goal fold
+- Skill surface
 - Client connection fixture plus trajectory and conversation UI samples
 - ACP snapshot test support
 

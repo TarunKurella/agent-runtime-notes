@@ -205,14 +205,14 @@ export function deriveTrajectoryLayout(input: TrajectoryLayoutInput): readonly T
   const representedRequests = new Set<string>()
   for (const node of nodes) {
     if (node.kind === 'assistant' && node.step > 0) {
-      representedRequests.add(`${node.turn}^@${node.step}`)
+      representedRequests.add(`${node.turn}\u0000${node.step}`)
     }
   }
   if (partial !== null && partial.step > 0) {
-    representedRequests.add(`${partial.turn}^@${partial.step}`)
+    representedRequests.add(`${partial.turn}\u0000${partial.step}`)
   }
   for (const call of runningCalls) {
-    if (call.step > 0) representedRequests.add(`${call.turn}^@${call.step}`)
+    if (call.step > 0) representedRequests.add(`${call.turn}\u0000${call.step}`)
   }
 
   const entries: OrderedLayoutEntry[] = [
@@ -244,7 +244,7 @@ export function deriveTrajectoryLayout(input: TrajectoryLayoutInput): readonly T
       .filter((request): request is AssistantRequestView =>
         request.purpose === 'assistant')
       .filter(request =>
-        !representedRequests.has(`${request.turn}^@${request.step}`),
+        !representedRequests.has(`${request.turn}\u0000${request.step}`),
       )
       .map(request => ({
         kind: 'request' as const,
@@ -692,7 +692,7 @@ function expandAssistant(
     .join('\n\n')
   const message: TrajectoryCellProps = {
     index: ++index,
-    recordId: `assistant^@${node.turn}^@${node.step}`,
+    recordId: `assistant\u0000${node.turn}\u0000${node.step}`,
     kind: 'message',
     sourceSeq: node.seq,
     text: messageText !== '' || thinkingText !== ''

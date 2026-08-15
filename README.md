@@ -50,7 +50,9 @@ No vector database, knowledge-graph service, website, or custom search daemon is
 1. `01-book/` — the 3,050-page Judgment Edition with 705 diagrams.
 2. `02-notes/` — all 687 canonical English Agent Notes copied byte-for-byte from commit `47f943859bef60e4160492346772ded9b24f765a`.
 3. `03-agent-context/` — 687 tagged implementation-context files, plus Markdown indexes and regex recipes.
-4. `04-code-samples/` — byte-identical TypeScript files from the pinned deepseek-harness commit for the most-cited code paths, plus provenance and licensing.
+4. `04-code-samples/` — byte-identical TypeScript files from the pinned deepseek-harness commit for the most-cited code paths and long-running agent primitives, plus provenance and licensing.
+
+The samples include compaction, persisted goals and goal-round continuation, workflow and Ralph-loop orchestration, session checkpointing and persistence, continuable subagents, and workspace-instruction context. They are deliberately selected source boundaries rather than a replacement for the upstream monorepo.
 
 The third folder is a map, not a second source of truth. If a context file conflicts with its raw note or the pinned code, the raw note and code win.
 

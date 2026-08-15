@@ -89,13 +89,13 @@ const USER_MARKDOWN_LITERAL = '用户字面量：# 不渲染 `code` [link](https
 
 /**
  * SGR wrapper for the terminal output sample below: authoring the escapes as
- * `^[` keeps literal control bytes out of this source file.
+ * `\u001b` keeps literal control bytes out of this source file.
  * @param code - the SGR parameter (an ANSI color or attribute number).
  * @param body - the text the attribute applies to.
  * @returns the body wrapped in the attribute and a reset.
  */
 function sgr(code: number, body: string): string {
-  return `^[[${code}m${body}^[[0m`
+  return `\u001b[${code}m${body}\u001b[0m`
 }
 
 /**

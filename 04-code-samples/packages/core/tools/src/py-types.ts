@@ -185,7 +185,7 @@ interface RenderState {
  * `XID_Continue`. The `description` path escapes NEL under the class above and
  * folds LS and PS in {@link describe}'s `\s+` collapse, both being `\s`.
  */
-const UNPRINTABLE = /[^@-^H^N-^_\u007f-^_]/g
+const UNPRINTABLE = /[\u0000-\u0008\u000e-\u001f\u007f-\u009f]/g
 
 /**
  * Unpaired surrogate code points, escaped by {@link describe} as `\uNNNN` —
