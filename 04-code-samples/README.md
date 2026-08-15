@@ -6,6 +6,8 @@ Use this folder when the official monorepo is not reachable. Every file maps one
 
 For a direct notes-to-code reading path, start with [DEEP-DIVE-MAP.md](DEEP-DIVE-MAP.md).
 
+For the detailed event-log, persistence, recovery, and compaction model, read [EVENT-SOURCING-DURABILITY.md](EVENT-SOURCING-DURABILITY.md).
+
 ## Layout
 
 04-code-samples/packages/... matches the source path named by the notes. For example, packages/core/tools/src/index.ts in the notes resolves to 04-code-samples/packages/core/tools/src/index.ts here.

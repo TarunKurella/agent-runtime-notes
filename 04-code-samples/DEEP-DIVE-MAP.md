@@ -50,6 +50,8 @@ Notes: [compaction seam](../03-agent-context/0133-compaction-as-a-capability-sea
 3. `packages/workflow/` contains general worker-thread orchestration and the fixed-policy Ralph tool.
 4. `packages/session/session-checkpoint-policy/` and `session-persistence/` show how long-running execution survives interruption without claiming exactly-once side effects.
 
+For the full event-log and physical-durability reading path, use [EVENT-SOURCING-DURABILITY.md](EVENT-SOURCING-DURABILITY.md).
+
 ## Verification Rule
 
 This map is a retrieval guide, not a source of truth. Check the linked note's status and source-evidence table, then read the included tests. Do not treat an archived note as the current design without locating its successor.
